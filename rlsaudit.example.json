@@ -1,0 +1,13 @@
+{
+  "i_own_this_project": true,
+  "url": "https://YOUR-PROJECT.supabase.co",
+  "anon_key_env": "SUPABASE_ANON_KEY",
+  "user_a": { "email": "audit-a@example.com", "password_env": "RLS_AUDIT_PASSWORD_A" },
+  "user_b": { "email": "audit-b@example.com", "password_env": "RLS_AUDIT_PASSWORD_B" },
+  "auto_discover": true,
+  "tables": [
+    { "name": "notes", "owner_column": "user_id" },
+    { "name": "orders", "owner_column": "customer_id" },
+    { "name": "products", "public_read": true }
+  ]
+}
